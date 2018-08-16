@@ -15,7 +15,17 @@ namespace ManueltTestProject
         {
             Service service = new Service();
             Console.WriteLine("Hello World!");
-            Console.WriteLine(service.GetJson());
+            CurrencyRate currency = service.GetJson();
+            Console.WriteLine(currency.Disclaimer);
+            foreach (var rate in currency.Rates)
+            {
+                Console.Write(rate.Key);
+                Console.Write(" ");
+                Console.WriteLine(rate.Value);
+            }
+
+            Console.WriteLine(currency.Rates["DKK"]);
+
             Console.ReadKey();
         }
     }
