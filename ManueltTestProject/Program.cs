@@ -13,9 +13,10 @@ namespace ManueltTestProject
         
         static void Main(string[] args)
         {
-            Service service = new Service();
+            CurrencyService service = new CurrencyService();
             Console.WriteLine("Hello World!");
-            CurrencyRate currency = service.GetJson();
+            //Get data from api
+            CurrencyRate currency = service.GetCurrencyData();
             Console.WriteLine(currency.Disclaimer);
             foreach (var rate in currency.Rates)
             {
