@@ -23,6 +23,10 @@ namespace ManueltTestProject
                 Console.Write(" ");
                 Console.WriteLine(rate.Value);
             }
+            string input = Console.ReadLine();
+            Console.WriteLine("Please write a type currency");
+            Console.WriteLine(currency.Rates[input.ToUpper()]);
+                
 
             Console.WriteLine(currency.Rates["DKK"]);
 
