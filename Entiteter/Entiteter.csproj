@@ -44,7 +44,10 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="CurrencyRate.cs" />
+    <Compile Include="MyIpAdresse.cs" />
+    <Compile Include="NasaData.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="WeatherData.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="packages.config" />
