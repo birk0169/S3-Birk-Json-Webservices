@@ -9,12 +9,17 @@ using System.Net;
 
 namespace Servicelag
 {
+    /// <summary>
+    /// Gets currency date from API
+    /// </summary>
     public class CurrencyService
     {
         /// <summary>
         /// Gets the currency data from the API and returns them in the form of a CurrencyRate object
         /// </summary>
-        /// <returns></returns>
+        /// <returns>
+        /// CurrencyRate Object
+        /// </returns>
         public CurrencyRate GetCurrencyData()
         {
             using (WebClient webClient = new WebClient())
